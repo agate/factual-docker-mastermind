@@ -3,6 +3,7 @@ FROM openjdk:8
 MAINTAINER agate<agate.hao@gmail.com>
 
 RUN apt-get update
+RUN apt-get install -y cronolog
 RUN apt-get install -y byobu vim-nox bash-completion sudo openssh-server
 
 RUN adduser --disabled-password --gecos 'mastermind user' mastermind
