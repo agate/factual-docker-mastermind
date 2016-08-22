@@ -13,5 +13,6 @@ RUN chmod a+x /usr/local/bin/lein
 RUN su -c "lein version" - mastermind
 
 ADD bootstrap.sh /bootstrap.sh
+CMD /bootstrap.sh
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
